@@ -1,0 +1,75 @@
+import 'package:flutter/material.dart';
+import 'local.dart';
+
+class Login extends StatefulWidget {
+  @override
+  _LoginState createState() => _LoginState();
+}
+
+class _LoginState extends State<Login> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            'Login',
+          ),
+        ),
+            
+        body: Align(
+          child: SizedBox(
+            width: double.infinity,
+            height: double.infinity,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+
+                children: [
+                  TextField(
+                    style: TextStyle(fontSize: 22),
+                    decoration: InputDecoration(
+                      labelText: 'Usuário', 
+                        border: OutlineInputBorder()
+                        ),
+                  ),
+
+                  SizedBox(height: 10),
+
+                  TextField(
+                    obscureText: true,
+                    style: TextStyle(fontSize: 22),
+                    decoration: InputDecoration(
+                      labelText: 'Senha', 
+                      border: OutlineInputBorder()
+                    ),
+                      
+                  ),
+
+                  SizedBox(height: 40),
+
+                  ButtonTheme(
+                    height: 50,
+                    minWidth: 100,
+                    child: RaisedButton(
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => Local()
+                          )
+                        );
+                      },
+                      child: Text('Login', style: TextStyle(fontSize: 24)),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        )
+      )
+    );
+  }
+}
