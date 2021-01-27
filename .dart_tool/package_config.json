@@ -92,12 +92,6 @@
       "languageVersion": "1.11"
     },
     {
-      "name": "smooth_star_rating",
-      "rootUri": "file:///D:/src/flutter/.pub-cache/hosted/pub.dartlang.org/smooth_star_rating-1.1.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.7"
-    },
-    {
       "name": "source_span",
       "rootUri": "file:///D:/src/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.0-nullsafety.2",
       "packageUri": "lib/",
@@ -146,13 +140,13 @@
       "languageVersion": "2.10"
     },
     {
-      "name": "navio_escola",
+      "name": "primeiro_app",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-01-26T17:55:10.195558Z",
+  "generated": "2021-01-27T21:43:21.408214Z",
   "generator": "pub",
   "generatorVersion": "2.10.4"
 }
